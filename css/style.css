@@ -7,12 +7,22 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(42, 158, 253);
+    box-sizing: border-box;
 }
 #flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15%;
+}
+#border {
+    width: 380px;
+    height: 230px;
+    border: 3px solid rgb(136, 202, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
 }
 #human-text {
     background-color: rgb(240, 255, 255);
@@ -21,10 +31,24 @@ body {
     padding: 1rem;
     resize: none;
     border: none;
+    overflow: scroll;
 }
 #submit {
-    display: block;
+    z-index: 20;
+    margin-top: -20px;
+    margin-left: 245px;
+    position: absolute;
+    background-color: rgb(136, 202, 255);
+    border: none;
+    color: rgb(28, 102, 162);
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
     cursor: pointer;
+    text-transform: uppercase;
+}
+#submit:hover {
+    background-image: linear-gradient(145deg, rgb(8, 97, 175), rgb(200, 108, 239));
+    color: rgb(245, 245, 245);
 }
 #copyright {
     position: fixed;
