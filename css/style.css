@@ -9,49 +9,62 @@ body {
     background-color: rgb(42, 158, 253);
     box-sizing: border-box;
 }
-#flex-container {
+.flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 5%;
 }
-#border {
+/* .bottom.flex-container {
+    margin-top: 5%;
+} */
+.border {
     width: 380px;
-    height: 230px;
+    height: 380px;
+    /* height: 230px; */
     border: 3px solid rgb(136, 202, 255);
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
 }
-#human-text {
+#human-text,
+#whale-text {
     background-color: rgb(240, 255, 255);
     width: 300px;
     height: 150px;
     padding: 1rem;
     resize: none;
     border: none;
+    border-radius: 10px;
     overflow: scroll;
 }
-#submit {
+#submit,
+#reset {
     z-index: 20;
-    margin-top: -20px;
-    margin-left: 245px;
+    margin-top: -25px;
+    margin-left: 225px;
     position: absolute;
     background-color: rgb(136, 202, 255);
     border: none;
+    border-radius: 100px;
     color: rgb(28, 102, 162);
     font-size: 1.5rem;
     padding: .5rem 1rem;
     cursor: pointer;
     text-transform: uppercase;
 }
-#submit:hover {
+#submit {
+    margin-left: 42px;
+}
+#submit:hover,
+#reset:hover {
     background-image: linear-gradient(145deg, rgb(8, 97, 175), rgb(200, 108, 239));
     color: rgb(245, 245, 245);
 }
 #copyright {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     color: rgb(255, 255, 255);
