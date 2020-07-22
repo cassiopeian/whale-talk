@@ -30,7 +30,7 @@ body {
     z-index: 10;
 }
 #human-text,
-#whale-text {
+#whale-text-area {
     background-color: rgb(240, 255, 255);
     width: 300px;
     height: 150px;
